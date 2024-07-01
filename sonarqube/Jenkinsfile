@@ -1,5 +1,5 @@
 node {
-    def myGradleContainer = docker.image('alpine')
+    def myGradleContainer = docker.image('alpine:3.14')
     myGradleContainer.pull()
 
     stage('Preparación') {
